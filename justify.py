@@ -4,7 +4,7 @@ import sublime_plugin
 from Default.paragraph import *
 from . import jtextwrap as textwrap
 
-class WrapLinesJustifiedCommand(WrapLinesCommand):
+class WrapLinesJustifiedCommand(OldWrapLinesCommand):
     ''' Same as parent, except using jtextwrap. '''
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
